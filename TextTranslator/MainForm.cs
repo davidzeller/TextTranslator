@@ -103,7 +103,7 @@ namespace TextTranslator
                 throw;
             }
 
-            return TranslateApi.Translate(authToken, text, activeSetting.From, activeSetting.To, activeSetting.Category);
+            return await TranslateApi.TranslateAsync(authToken, text, activeSetting.From, activeSetting.To, activeSetting.Category);
         }
     }
 }
